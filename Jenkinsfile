@@ -32,8 +32,8 @@ pipeline {
             sh '''
                 ssh -o StrictHostKeyChecking=no $APP_HOST "
                     cd ~/tailoring &&
-                    docker compose pull frontend &&
-                    docker compose up -d frontend
+                    docker compose pull backend &&
+                    docker compose up -d backend
                 "
             '''
         }
